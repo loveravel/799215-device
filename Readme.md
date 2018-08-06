@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Sergey Odintsov](https://up.htmlacademy.ru/htmlcss/22/user/799215).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Зубов](https://up.htmlacademy.ru/htmlcss/22/user/208340).
 
 ---
 
