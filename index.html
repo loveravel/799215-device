@@ -5,28 +5,23 @@
         <title>Device. Главная</title>
     </head>
     <body>
-        
-        <!-- Шапка -->
+       
         <header class="header-main">       
             <!-- Логотип // Лучше изображением или текстом? -->
             <a class="main-header-logo" href="#">
                 <img src="img/logotype.svg" width="164" height="36" alt="Логотип Device">
             </a>            
-            <!-- Поиск -->
             <form>
                 <button type="submit"></button>
                 <input type="search" name="search" placeholder="Поиск по сайту">
             </form>
-            <!-- Список опций пользователя пользователя -->
             <ul class="user-nav">
                 <li class="login-link">Войти</li>
             </ul>
-            <!-- Список инструментов каталога -->
             <ul class="catalog-tools-nav">
                 <li class="differences">Сравнить</li>
                 <li class="basket">Корзина</li>
             </ul>
-            <!-- Навигация по сайту -->
             <nav class="site-nav">
                 <li>
                     <a href="catalog.html">Каталог товаров</a>
@@ -47,38 +42,48 @@
                 <li><a href="#contacts">Контакты</a></li>
             </nav>
         </header>
-        
-        <!-- Слайдер -->
-        <section class="slider">
-            <p class="number-slide">01</p>
-            <p><b>Делай селфи, как Бен Стилер!</b></p>
-            <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-            <a class="btn" href="#">
-                <p>Подробнее</p>
-            </a>
-            <label>
-                <input type="radio" name="slider" value="1" checked>
-            </label>
-            <label>
-                <input type="radio" name="slider" value="2">
-            </label>
-            <label>
-                <input type="radio" name="slider" value="3">
-            </label>
-            <table>
-                <tr>
-                    <th>Длина палки</th>
-                    <th>Вес палки</th>
-                    <th>Материал</th>
-                </tr>
-                <tr>
-                    <td>8,5 м</td>
-                    <td>5 кг</td>
-                    <td>Карбон</td>
-                </tr>
-            </table>
-            <img src="img/slide1.png" width="384" height="486" alt="Палка для селфи">
-        </section>
-        
+        <main> 
+            <section class="slider">
+                <p class="number-slide">01</p>
+                <p><b>Делай селфи, как Бен Стилер!</b></p>
+                <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                <a class="btn" href="#">
+                    <p>Подробнее</p>
+                </a>
+                <label>
+                    <input type="radio" name="slider" value="1" checked>
+                </label>
+                <label>
+                    <input type="radio" name="slider" value="2">
+                </label>
+                <label>
+                    <input type="radio" name="slider" value="3">
+                </label>
+                <table>
+                    <tr>
+                        <th>Длина палки</th>
+                        <th>Вес палки</th>
+                        <th>Материал</th>
+                    </tr>
+                    <tr>
+                        <td>8,5 м</td>
+                        <td>5 кг</td>
+                        <td>Карбон</td>
+                    </tr>
+                </table>
+                <img src="img/slide1.png" width="384" height="486" alt="Палка для селфи">
+            </section>
+
+            <section class="popular">
+                <ul>
+                    <li><a href="catalog-vr.html">Виртуальная реальность</a></li>
+                    <li><a href="catalog-selfie.html">Моноподы для селфи</a></li>
+                    <li><a href="catalog-ac.html">Экшн-камеры</a></li>
+                    <li><a href="catalog-fb.html">Фитнес-браслеты</a></li>
+                    <li><a href="catalog-sw.html">Умные часы</a></li>
+                    <li><a href="catalog-quadrupters.html">Квадракоптеры</a></li>                
+                </ul>
+            </section>
+        </main>
     </body>
 </html>
