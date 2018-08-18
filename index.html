@@ -9,13 +9,19 @@
         <header class="header-main">       
             <a class="main-header-logo" href="#">Device</a>            
             <form>
-                <button type="submit"></button>
+                <button class="search" type="submit">Поиск</button>
                 <input type="search" name="search" placeholder="Поиск по сайту">
             </form>
             <ul class="user-nav">
-                <li class="login-link">Войти</li>
-                <li class="differences">Сравнить</li>
-                <li class="basket">Корзина</li>
+                <li class="login-link">
+                    <a href="login.html">Войти</a>
+                </li>
+                <li class="differences">
+                    <a href="differences.html">Сравнить</a>
+                </li>
+                <li class="basket">
+                    <a href="basket">Корзина</a>
+                </li>
             </ul>
             <nav class="site-nav">
                 <ul>
@@ -37,60 +43,70 @@
             </nav>
         </header>
         <main class="container">
-            <ul class="promo-slider">
-                <li class="promo-slide">
-                    <p class="number-slide">01</p>
-                    <p><b>Делай селфи, как Бен Стилер!</b></p>
-                    <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-                    <a class="btn" href="#">Подробнее</a>
-                    <!-- Созрел вопрос. Почему нельзя стилизовать прошлый вариант через флексбокс? -->
-                    <table>
-                        <tr>
-                            <td>8,5 м</td>
-                            <td>5 кг</td>
-                            <td>Карбон</td>
-                        </tr>
-                        <tr>
-                            <th>Длина палки</th>
-                            <th>Вес палки</th>
-                            <th>Материал</th>
-                        </tr>
-                    </table>
-                    <img src="img/slider-1.png" width="384" height="486" alt="Палка для селфи">
-                </li>
-                <li class="promo-slide">
-                    <p class="number-slide">02</p>
-                    <p><b>Худеем правильно!</b></p>
-                    <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-                    <a class="btn" href="#">Подробнее</a>
-                    <table>
-                        <tr>
-                            <td>48 часов</td>
-                        </tr>
-                        <tr>
-                            <th>Без подзарядки</th>
-                        </tr>
-                    </table>
-                    <img src="img/slider-2.png" width="345" height="485" alt="Фитнес браслет">
-                </li>
-                <li class="promo-slide">
-                    <p class="number-slide">03</p>
-                    <p><b>Порхает как бабочка, жалит как пчела!</b></p>
-                    <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-                    <a class="btn" href="#">Подробнее</a>
-                    <table>
-                        <tr>
-                            <td>800 м</td>
-                            <td>50 м</td>
-                        </tr>
-                        <tr>
-                            <th>Дальность полета</th>
-                            <th>Радиус поражения</th>
-                        </tr>
-                    </table>
-                    <img src="img/slider-3.png" width="526" height="334" alt="Квадракоптер">
-                </li>
-            </ul>
+            <section class="promo-slider">
+                <input type="radio" id="promo-btn-1" name="promo-toggle" checked>
+                <input type="radio" id="promo-btn-2" name="promo-toggle">
+                <input type="radio" id="promo-btn-3" name="promo-toggle">
+                <div class="promo-slider-controls">
+                    <label for="btn-1"></label>
+                    <label for="btn-2"></label>
+                    <label for="btn-3"></label>
+                </div>
+            
+                <ul class="promo-slider">
+                    <li class="promo-slide">
+                        <p class="number-slide">01</p>
+                        <b>Делай селфи, как Бен Стилер!</b>
+                        <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                        <a class="btn" href="#">Подробнее</a>
+                        <table>
+                            <tr>
+                                <td>8,5 м</td>
+                                <td>5 кг</td>
+                                <td>Карбон</td>
+                            </tr>
+                            <tr>
+                                <th>Длина палки</th>
+                                <th>Вес палки</th>
+                                <th>Материал</th>
+                            </tr>
+                        </table>
+                        <img src="img/slider-1.png" width="384" height="486" alt="Палка для селфи">
+                    </li>
+                    <li class="promo-slide">
+                        <p class="number-slide">02</p>
+                        <b>Худеем правильно!</b>
+                        <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+                        <a class="btn" href="#">Подробнее</a>
+                        <table>
+                            <tr>
+                                <td>48 часов</td>
+                            </tr>
+                            <tr>
+                                <th>Без подзарядки</th>
+                            </tr>
+                        </table>
+                        <img src="img/slider-2.png" width="345" height="485" alt="Фитнес браслет">
+                    </li>
+                    <li class="promo-slide">
+                        <p class="number-slide">03</p>
+                        <b>Порхает как бабочка, жалит как пчела!</b>
+                        <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+                        <a class="btn" href="#">Подробнее</a>
+                        <table>
+                            <tr>
+                                <td>800 м</td>
+                                <td>50 м</td>
+                            </tr>
+                            <tr>
+                                <th>Дальность полета</th>
+                                <th>Радиус поражения</th>
+                            </tr>
+                        </table>
+                        <img src="img/slider-3.png" width="526" height="334" alt="Квадракоптер">
+                    </li>
+                </ul>
+            </section>
             
             <ul class="popular">
                 <li>
@@ -131,20 +147,16 @@
                 </li>
             </ul>
             
-            <!-- Попробовал разметить так. Если не правильно, то давай созвонимся -->
             <section class="services-slider">
-                <ul class="services-slider-left">
-                    <li class="service-slide">
-                        <a name="delivery">Доставка</a>
-                    </li>
-                    <li class="service-slide">
-                        <a name="warranty">Гарантия</a>
-                    </li>
-                    <li class="service-slide">
-                        <a>Кредит</a>
-                    </li>
-                </ul>
-                <ul class="services-slider-right">
+                <input type="radio" id="service-btn-1" name="service-toggle" checked>
+                <input type="radio" id="service-btn-2" name="service-toggle">
+                <input type="radio" id="service-btn-3" name="service-toggle">
+                <div class="service-slider-controls">
+                    <label for="btn-1"><a name="delivery">Доставка</a></label>
+                    <label for="btn-2"><a name="warranty">Гарантия</a></label>
+                    <label for="btn-3"><a>Кредит</a></label>
+                </div>
+                <ul class="services-slider-slides">
                     <li>
                         <h2>Доставка</h2>
                         <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
@@ -170,22 +182,19 @@
                 <h2>О нас</h2>
                 <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
                 <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-                <ul>
+                <ul class="partners">
                     <li>Деловые линии</li>
                     <li>Автотрейдинг</li>
                     <li>ЖелДорЭкспедиция</li>
                 </ul>
-                <a href="info.html">Подробнее о нас</a>
+                <a class="btn" href="info.html">Подробнее о нас</a>
             </section>
             
             <section class="contacts">
-                <!-- Хотел сделать через якоря. А как можно иначе? Ведь "Контакты" в шапке по идее должны куда-то вести -->
                 <h2><a name="contacts">Контакты</a></h2>
                 <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
                 <img src="img/map.jpg" width="560" height="222" alt="Карта. Офис по адресу г. Москва, ул. Строителей, 15">
-                <a href="write-us.html">
-                    <p>Напишите нам</p>
-                </a>
+                <a class="btn" href="write-us.html">Напишите нам</a>
             </section>            
         </main>
         
@@ -203,9 +212,15 @@
                 <li><a class="social-btn" href="#">Twitter</a></li>
             </ul>
             <ul class="user-nav">
-                <li class="login-link">Войти</li>
-                <li class="differences">Сравнить</li>
-                <li class="basket">Корзина</li>
+                <li class="login-link">
+                    <a href="login.html">Войти</a>
+                </li>
+                <li class="differences">
+                    <a href="differences.html">Сравнить</a>
+                </li>
+                <li class="basket">
+                    <a href="basket">Корзина</a>
+                </li>
             </ul>
             <p>Тел.: +7 (495) 495-95-95</p>
             <a href="https://htmlacademy.ru/intensive/htmlcss">
@@ -215,18 +230,26 @@
         
         <section class="modal modal-write-us">
             <h2 class="visually-hidden">Напишите нам</h2>
-            <p>Ваше имя:</p>
-            <!-- Место для формы -->
-            <p>Ваш e-mail:</p>
-            <!-- Место для формы -->
-            <p>Текст письма:</p>
-            <!-- Место для формы -->
-            <span class="modal-close">x</span>
+            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                <p>
+                    <label for="user-name">Ваше имя:</label>
+                    <input id="user-name" type="text" placeholder="Имя Фамилия">
+                </p>
+                <p>
+                    <label for="user-email">Ваш e-mail:</label>
+                    <input id="user-email" type="email" placeholder="email@example.com">
+                </p>
+                <p>
+                    <label for="user-letter">Текст письма:</label>
+                    <textarea id="user-letter" type="text" placeholder="В свободной форме"></textarea>
+                </p>
+            </form>
+            <button class="modal-close">Закрыть</button>
         </section>
         
         <section class="modal modal-map">
             <h2 class="visually-hidden">Как до нас добратсья</h2>
-            <span class="modal-close">x</span>
+            <button class="modal-close">Закрыть</button>
         </section>
     </body>
 </html>
