@@ -3,14 +3,16 @@
     <head>
         <meta charset="utf-8">
         <title>Device. Главная</title>
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
        
         <header class="header-main">       
             <a class="main-header-logo" href="#">Device</a>            
             <form>
-                <button class="search" type="submit">Поиск</button>
                 <input type="search" name="search" placeholder="Поиск по сайту">
+                <button class="search visually-hidden" type="submit">Найти</button>
             </form>
             <ul class="user-nav">
                 <li class="login-link">
@@ -23,8 +25,8 @@
                     <a href="basket">Корзина</a>
                 </li>
             </ul>
-            <nav class="site-nav">
-                <ul>
+            <nav class="main-nav">
+                <ul class="site-nav">
                     <li>
                         <a href="catalog.html">Каталог товаров</a>
                         <ul class="catalog-nav visually-hover">
@@ -36,9 +38,9 @@
                             <li><a href="catalog-quadrupters.html">Квадракоптеры</a></li>
                         </ul>
                     </li>
-                        <li><a href="#delivery">Доставка</a></li>
-                        <li><a href="#warranty">Гарантия</a></li>
-                        <li><a href="#contacts">Контакты</a></li>
+                    <li><a href="#delivery">Доставка</a></li>
+                    <li><a href="#warranty">Гарантия</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
                 </ul>
             </nav>
         </header>
@@ -55,11 +57,11 @@
             
                 <ul class="promo-slider">
                     <li class="promo-slide">
-                        <p class="number-slide">01</p>
-                        <b>Делай селфи, как Бен Стилер!</b>
-                        <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                        <span class="number-slide">01</span>
+                        <b class="slide-title">Делай селфи, как Бен Стилер!</b>
+                        <p class="slide-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
                         <a class="btn" href="#">Подробнее</a>
-                        <table>
+                        <table class="slide-table">
                             <tr>
                                 <td>8,5 м</td>
                                 <td>5 кг</td>
@@ -74,11 +76,11 @@
                         <img src="img/slider-1.png" width="384" height="486" alt="Палка для селфи">
                     </li>
                     <li class="promo-slide">
-                        <p class="number-slide">02</p>
-                        <b>Худеем правильно!</b>
-                        <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+                        <span class="number-slide">02</span>
+                        <b class="slide-title">Худеем правильно!</b>
+                        <p class="slide-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
                         <a class="btn" href="#">Подробнее</a>
-                        <table>
+                        <table class="slide-table">
                             <tr>
                                 <td>48 часов</td>
                             </tr>
@@ -89,11 +91,11 @@
                         <img src="img/slider-2.png" width="345" height="485" alt="Фитнес браслет">
                     </li>
                     <li class="promo-slide">
-                        <p class="number-slide">03</p>
-                        <b>Порхает как бабочка, жалит как пчела!</b>
-                        <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+                        <span class="number-slide">03</span>
+                        <b class="slide-title">Порхает как бабочка, жалит как пчела!</b>
+                        <p class="slide-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
                         <a class="btn" href="#">Подробнее</a>
-                        <table>
+                        <table class="slide-table">
                             <tr>
                                 <td>800 м</td>
                                 <td>50 м</td>
@@ -109,37 +111,37 @@
             </section>
             
             <ul class="popular">
-                <li>
+                <li class="popular-item">
                     <a href="catalog-vr.html">
                         <img src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">
                         <span>Виртуальная реальность</span>
                     </a>
                 </li>
-                <li>
+                <li class="popular-item">
                     <a href="catalog-selfie.html">
                         <img src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
                         <span>Моноподы для селфи</span>
                     </a>
                 </li>
-                <li>
+                <li class="popular-item">
                     <a href="catalog-ac.html">
                         <img src="img/popular-3.svg" width="71" height="87" alt="Экшн-камеры">
                         <span>Экшн-камеры</span>
                     </a>
                 </li>
-                <li>
+                <li class="popular-item">
                     <a href="catalog-fb.html">
                         <img src="img/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты">
                         <span>Фитнес-браслеты</span>
                     </a>
                 </li>
-                <li>
+                <li class="popular-item">
                     <a href="catalog-sw.html">
                         <img src="img/popular-5.svg" width="56" height="98" alt="Умные часы">
                         <span>Умные часы</span>
                     </a>
                 </li>
-                <li>
+                <li class="popular-item">
                     <a href="catalog-quadrupters.html">
                         <img src="img/popular-6.svg" width="132" height="69" alt="Квадракоптеры">
                         <span>Квадракоптеры</span>
@@ -152,9 +154,9 @@
                 <input type="radio" id="service-btn-2" name="service-toggle">
                 <input type="radio" id="service-btn-3" name="service-toggle">
                 <div class="service-slider-controls">
-                    <label for="btn-1"><a name="delivery">Доставка</a></label>
-                    <label for="btn-2"><a name="warranty">Гарантия</a></label>
-                    <label for="btn-3"><a>Кредит</a></label>
+                    <label for="btn-1"><a  class="btn btn-slider" name="delivery">Доставка</a></label>
+                    <label for="btn-2"><a  class="btn btn-slider" name="warranty">Гарантия</a></label>
+                    <label for="btn-3"><a class="btn btn-slider">Кредит</a></label>
                 </div>
                 <ul class="services-slider-slides">
                     <li>
@@ -171,11 +173,11 @@
                     </li>
                 </ul>
             </section>
-            <section class="logotypes">
-                <img src="img/logo-1.png" width="260" height="100" alt="Первый логотип">
-                <img src="img/logo-2.png" width="260" height="100" alt="Второй логотип">
-                <img src="img/logo-3.png" width="260" height="100" alt="Третий логотип">
-                <img src="img/logo-4.png" width="260" height="100" alt="Четвертый логотип">
+            <section class="brands">
+                <img src="img/logo-1.jpg" width="260" height="100" alt="Первый логотип">
+                <img src="img/logo-2.jpg" width="260" height="100" alt="Второй логотип">
+                <img src="img/logo-3.jpg" width="260" height="100" alt="Третий логотип">
+                <img src="img/logo-4.jpg" width="260" height="100" alt="Четвертый логотип">
             </section>
             
             <section class="info">
@@ -198,20 +200,20 @@
             </section>            
         </main>
         
-        <footer>
+        <footer class="main-footer">
             <a class="main-footer-logo" href="index.html">Device</a>
             <p>г. Москва, ул. Строителей, 15</p>
-            <ul>
+            <ul class="site-nav site-nav-footer">
                 <li><a href="#delivery">Доставка</a></li>
                 <li><a href="#warranty">Гарантия</a></li>
                 <li><a href="#contacts">Контакты</a></li>
             </ul>
-            <ul>
+            <ul class="socials-btn">
                 <li><a class="social-btn" href="#">Facebook</a></li>
                 <li><a class="social-btn" href="#">Instagram</a></li>
                 <li><a class="social-btn" href="#">Twitter</a></li>
             </ul>
-            <ul class="user-nav">
+            <ul class="user-nav user-nav-footer">
                 <li class="login-link">
                     <a href="login.html">Войти</a>
                 </li>
@@ -223,7 +225,7 @@
                 </li>
             </ul>
             <p>Тел.: +7 (495) 495-95-95</p>
-            <a href="https://htmlacademy.ru/intensive/htmlcss">
+            <a class="html-logo" href="https://htmlacademy.ru/intensive/htmlcss">
                 <img src="img/logo-html.svg" width="27" height="35" alt="Логотип HTML Academy">
             </a>
         </footer>
@@ -244,6 +246,7 @@
                     <textarea id="user-letter" type="text" placeholder="В свободной форме"></textarea>
                 </p>
             </form>
+            <button class="btn">Отправить</button>
             <button class="modal-close">Закрыть</button>
         </section>
         

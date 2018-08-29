@@ -1,0 +1,536 @@
+/*---fonts---*/
+
+@font-face {
+    font-family: "Gilroy";
+    src: url(fonts/gilroylight.woff2) format(woff2),
+         url(fonts/gilroylight.woff) format(woff);
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url(fonts/gilroyextrabold.woff2) format(woff2),
+         url(fonts/gilroyextrabold.woff) format(woff);
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(fonts/opensanslight.woff2) format(woff2),
+         url(fonts/opensanslight.woff) format(woff);
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(fonts/opensans.woff2) format(woff2),
+         url(fonts/opensans.woff) format(woff);
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*---all---*/
+
+body {
+    margin: 0;
+    padding: 0;
+    
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #000000;
+    
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 800;
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+    
+    text-align: center;
+    vertical-align: middle;
+    
+    color: #000000;
+    background-color: #f0c52e;
+    border: none;
+}
+
+/*---header---*/
+
+.header-main {
+    background-color: #f7e296;
+}
+
+.main-header-logo,
+.main-footer-logo {
+    font-size: 48px;
+    line-height: 48px;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.48px;
+}
+
+.user-nav,
+.site-nav,
+.catalog-nav {
+    list-style: none;
+}
+
+.user-nav a,
+.site-nav a,
+.catalog-nav a {
+    color: #000000;
+}
+
+.user-nav a {
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0.15px;
+}
+
+.site-nav a {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 800;
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+}
+
+.catalog-nav a {
+    font-size: 15px;
+    line-height: 36px;
+    font-weight: 300;
+    letter-spacing: 0.15px;
+    text-transform: none;
+}
+
+.main-header-logo:hover,
+.user-nav a:hover,
+.site-nav a:hover,
+.catalog-nav a:hover,
+.main-header-logo:focus,
+.user-nav a:focus,
+.site-nav a:focus,
+.catalog-nav a:focus {  
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.main-header-logo:active,
+.user-nav a:active,
+.site-nav a:active,
+.catalog-nav a:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+/*---INDEX---*/
+
+.promo-slider {
+    list-style: none;
+}
+
+.number-slide {
+    font-size: 179.2px;
+    line-height: 179.2px;
+    font-weight: 800;
+    letter-spacing: 1.792px;
+}
+
+.slide-title {
+    font-size: 47px;
+    line-height: 56px;
+    font-weight: 800;
+    letter-spacing: 0.47px;
+}
+
+.slide-text {
+    font-family: "Open Sans";
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 300;
+    letter-spacing: 0.15px;
+}
+
+.slide-table td {
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 300;
+    letter-spacing: 0.36px;
+}
+
+.slide-table th {
+    font-family: "Open Sans";
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 300;
+    letter-spacing: 0.13px;
+}
+
+/*---!!!popular!!!---*/
+
+.popular {
+    list-style: none;
+}
+
+.popular span {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 800;
+    letter-spacing: 0.18px;
+    color: #000000;
+}
+
+.popular span:active {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 800;
+    letter-spacing: 0.18px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.popular-item {
+    background-color: rgba(240, 197, 46, 0.5);
+}
+
+.popular-item:hover,
+.popular-item:active,
+.popular-item:focus {
+    background-color: rgba(240, 197, 46, 1);
+}
+
+.popular img:active {
+    filter: opacity(0.3);
+}
+
+.btn-slider:active {
+    color: #f7e184;
+    background: #000000;
+}
+
+.services-slider-slides {
+    list-style: none;
+}
+
+.services-slider-slides h2 {
+    font-size: 47px;
+    line-height: 48px;
+    font-weight: 800;
+    letter-spacing: 0.47px;
+}
+
+.services-slider-slides p {
+    font-family: "Open Sans";
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 300;
+    letter-spacing: 0.15px;
+}
+
+.brands img {
+    filter: grayscale(1) opacity(0.2);
+}
+
+.brands img:hover {
+    filter: none;
+}
+
+.info h2,
+.contacts h2 {
+    font-size: 47px;
+    line-height: 48px;
+    font-weight: 800;
+    letter-spacing: 0.47px;
+}
+
+.info p,
+.contacts p {
+    font-family: "Open Sans";
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0px;
+}
+
+.partners {
+    list-style: none;
+}
+
+.partners li {
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: 800;
+    letter-spacing: 0px;
+}
+
+/*---CATALOG---*/
+
+.page-title {
+    font-size: 47px;
+    line-height: 48px;
+    font-weight: 800;
+    letter-spacing: 0.47px;
+}
+
+.breadcrumbs {
+    list-style: none;
+}
+
+.breadcrumbs a,
+.breadcrumbs-current {
+    font-family: "Open Sans";
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    letter-spacing: 0.14px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs a:active {
+    color: rgba(0, 0, 0, 0.1);
+}
+
+.filters {
+    background-color: #efefef;
+}
+
+.filters h2,
+.sorting-nav h2 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 800;
+    letter-spacing: 3.2px;
+}
+
+.filters fieldset {
+    border: none;    
+}
+
+.filter-title {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 800;
+    letter-spacing: 0.18px;
+}
+
+.filter-options,
+.sorting-list {
+    list-style: none;
+}
+
+.filter-options label {
+    font-family: "Open Sans";
+    font-size: 14px;
+    line-height: 40px;
+    font-weight: 300;
+    letter-spacing: 0.14px;
+}
+
+.filter-options label:disabled + label {
+    color: #a6a6a6;
+}
+
+.sorting-list li {
+    font-family: "Open Sans";
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.sorting-list li:hover,
+.sorttig-list li:focus {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.sorting-list li:active {
+    color: #000000;
+}
+
+.sorting-list .sorting-current {
+    color: #000000;
+}
+
+.catalog-items {
+    list-style: none;
+}
+
+.item-title {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 800;
+    letter-spacing: 0.18px;
+    color: #000000;
+}
+
+.catalog-item b{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    letter-spacing: 0.16px;
+}
+
+.new {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 800;
+    letter-spacing: 0.7px;
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.btn-two {
+    font-family: "Open Sans";
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 300;
+    letter-spacing: 0.13px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.btn-hwo:hover,
+.btn-two:focus {
+    color: #000000;
+}
+
+.btn-two:active {
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.pagination-list {
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.pagination-item a {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 800;
+    letter-spacing: 3.2px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.pagination-item a:active {
+    color: #000000;
+}
+
+.pagination-item-current a,
+.pagination-item:first-child a,
+.pagination-item:last-child a {
+    color: #000000;
+}
+
+.pagination-item:first-child a:hover,
+.pagination-item:first-child a:focus,
+.pagination-item:last-child a:hover,
+.pagination-item:last-child a:focus{
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.pagination-item-current a:active,
+.pagination-item:first-child a:active,
+.pagination-item:last-child a:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+/*---footer---*/
+
+.main-footer {
+    color: #ffffff;
+    background-color: #464646;
+}
+
+.main-footer-logo,
+.html-logo {
+    color: #ffc600;
+}
+
+.main-footer-logo:hover, 
+.html-logo:hover,
+.main-footer-logo:focus, 
+.html-logo:focus {
+    opacity: 0.6;
+}
+
+.main-footer-logo:active, 
+.html-logo:active {
+    opacity: 0.3;
+}
+
+.site-nav-footer a,
+.user-nav-footer a {
+    color: #ffffff;
+}
+
+.user-nav-footer a:hover,
+.site-nav-footer a:hover,
+.user-nav-footer a:focus,
+.site-nav-footer a:focus {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.user-nav-footer a:active,
+.site-nav-footer a:active {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.socials-btn {
+    list-style: none;
+}
+
+/*---MODAL---*/
+
+.modal {
+    background-color: #ffffff;
+}
+
+.login-form label {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 800;
+    letter-spacing: 0px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="email"],
+.login-form textarea[type="text"] {
+    font-family: "Open Sans";
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    color: #464646;
+    background-color: #f2f2f2;
+    border: none;
+}
+
+.login-form input[type="text"]:hover,
+.login-form input[type="email"]:hover,
+.login-form textarea[type="text"]:hover {
+    background-color: #eaeaea;
+}
+
+.login-form input[type="text"]:focus,
+.login-form input[type="email"]:focus,
+.login-form textarea[type="text"]:focus {
+    background-color: #ffffff;
+    border: 3px solid #f7e296;
+}
