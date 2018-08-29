@@ -7,55 +7,49 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-       
-        <header class="header-main">       
-            <a class="main-header-logo" href="#">Device</a>            
-            <form>
-                <input type="search" name="search" placeholder="Поиск по сайту">
-                <button class="search visually-hidden" type="submit">Найти</button>
-            </form>
-            <ul class="user-nav">
-                <li class="login-link">
-                    <a href="login.html">Войти</a>
-                </li>
-                <li class="differences">
-                    <a href="differences.html">Сравнить</a>
-                </li>
-                <li class="basket">
-                    <a href="basket">Корзина</a>
-                </li>
-            </ul>
-            <nav class="main-nav">
-                <ul class="site-nav">
-                    <li>
-                        <a href="catalog.html">Каталог товаров</a>
-                        <ul class="catalog-nav visually-hover">
-                            <li><a href="catalog-vr.html">Виртуальная реальность</a></li>
-                            <li><a href="catalog-selfie.html">Моноподы для селфи</a></li>
-                            <li><a href="catalog-ac.html">Экшн-камеры</a></li>
-                            <li><a href="catalog-fb.html">Фитнес-браслеты</a></li>
-                            <li><a href="catalog-sw.html">Умные часы</a></li>
-                            <li><a href="catalog-quadrupters.html">Квадракоптеры</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#delivery">Доставка</a></li>
-                    <li><a href="#warranty">Гарантия</a></li>
-                    <li><a href="#contacts">Контакты</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main class="container">
-            <section class="promo-slider">
-                <input type="radio" id="promo-btn-1" name="promo-toggle" checked>
-                <input type="radio" id="promo-btn-2" name="promo-toggle">
-                <input type="radio" id="promo-btn-3" name="promo-toggle">
-                <div class="promo-slider-controls">
-                    <label for="btn-1"></label>
-                    <label for="btn-2"></label>
-                    <label for="btn-3"></label>
+        <div class="container">
+            <header class="header-main ">
+                <a class="main-header-logo" href="#">Device</a>
+                <div class="user-tools">
+                    <form>
+                        <input type="search" name="search" placeholder="Поиск по сайту">
+                        <button class="search visually-hidden" type="submit">Найти</button>
+                    </form>
+                    <ul class="user-nav">
+                        <li class="login-link">
+                            <a href="login.html">Войти</a>
+                        </li>
+                        <li class="differences">
+                            <a href="differences.html">Сравнить</a>
+                        </li>
+                        <li class="basket">
+                            <a href="basket">Корзина</a>
+                        </li>
+                    </ul>
                 </div>
-            
-                <ul class="promo-slider">
+                <nav class="main-nav">
+                    <ul class="site-nav">
+                        <li>
+                            <a href="catalog.html">Каталог товаров</a>
+                            <ul class="catalog-nav visually-hover">
+                                <li><a href="catalog-vr.html">Виртуальная реальность</a></li>
+                                <li><a href="catalog-selfie.html">Моноподы для селфи</a></li>
+                                <li><a href="catalog-ac.html">Экшн-камеры</a></li>
+                                <li><a href="catalog-fb.html">Фитнес-браслеты</a></li>
+                                <li><a href="catalog-sw.html">Умные часы</a></li>
+                                <li><a href="catalog-quadrupters.html">Квадракоптеры</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#delivery">Доставка</a></li>
+                        <li><a href="#warranty">Гарантия</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <main class="container">
+            <section class="promo-slider">            
+                <ul class="promo-slider-list">
                     <li class="promo-slide">
                         <span class="number-slide">01</span>
                         <b class="slide-title">Делай селфи, как Бен Стилер!</b>
@@ -110,49 +104,48 @@
                 </ul>
             </section>
             
-            <ul class="popular">
-                <li class="popular-item">
-                    <a href="catalog-vr.html">
-                        <img src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">
-                        <span>Виртуальная реальность</span>
-                    </a>
-                </li>
-                <li class="popular-item">
-                    <a href="catalog-selfie.html">
-                        <img src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
-                        <span>Моноподы для селфи</span>
-                    </a>
-                </li>
-                <li class="popular-item">
-                    <a href="catalog-ac.html">
-                        <img src="img/popular-3.svg" width="71" height="87" alt="Экшн-камеры">
-                        <span>Экшн-камеры</span>
-                    </a>
-                </li>
-                <li class="popular-item">
-                    <a href="catalog-fb.html">
-                        <img src="img/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты">
-                        <span>Фитнес-браслеты</span>
-                    </a>
-                </li>
-                <li class="popular-item">
-                    <a href="catalog-sw.html">
-                        <img src="img/popular-5.svg" width="56" height="98" alt="Умные часы">
-                        <span>Умные часы</span>
-                    </a>
-                </li>
-                <li class="popular-item">
-                    <a href="catalog-quadrupters.html">
-                        <img src="img/popular-6.svg" width="132" height="69" alt="Квадракоптеры">
-                        <span>Квадракоптеры</span>
-                    </a>
-                </li>
-            </ul>
+            <section class="popular">
+                <ul class="popular-list">
+                    <li class="popular-item">
+                        <a href="catalog-vr.html">
+                            <img src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">
+                            <span>Виртуальная реальность</span>
+                        </a>
+                    </li>
+                    <li class="popular-item">
+                        <a href="catalog-selfie.html">
+                            <img src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
+                            <span>Моноподы для селфи</span>
+                        </a>
+                    </li>
+                    <li class="popular-item">
+                        <a href="catalog-ac.html">
+                            <img src="img/popular-3.svg" width="71" height="87" alt="Экшн-камеры">
+                            <span>Экшн-камеры</span>
+                        </a>
+                    </li>
+                    <li class="popular-item">
+                        <a href="catalog-fb.html">
+                            <img src="img/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты">
+                            <span>Фитнес-браслеты</span>
+                        </a>
+                    </li>
+                    <li class="popular-item">
+                        <a href="catalog-sw.html">
+                            <img src="img/popular-5.svg" width="56" height="98" alt="Умные часы">
+                            <span>Умные часы</span>
+                        </a>
+                    </li>
+                    <li class="popular-item">
+                        <a href="catalog-quadrupters.html">
+                            <img src="img/popular-6.svg" width="132" height="69" alt="Квадракоптеры">
+                            <span>Квадракоптеры</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
             
             <section class="services-slider">
-                <input type="radio" id="service-btn-1" name="service-toggle" checked>
-                <input type="radio" id="service-btn-2" name="service-toggle">
-                <input type="radio" id="service-btn-3" name="service-toggle">
                 <div class="service-slider-controls">
                     <label for="btn-1"><a  class="btn btn-slider" name="delivery">Доставка</a></label>
                     <label for="btn-2"><a  class="btn btn-slider" name="warranty">Гарантия</a></label>
