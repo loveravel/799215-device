@@ -33,6 +33,7 @@
 /*---General---*/
 
 body {
+    min-width: 1240px;
     margin: 0;
     padding: 0;
     
@@ -769,6 +770,7 @@ a {
     padding: 0;
     margin-top: 36px;
     margin-bottom: 23px;
+    margin-left: 60px;
     font-size: 47px;
     line-height: 48px;
     font-weight: 800;
@@ -777,6 +779,8 @@ a {
 
 .breadcrumbs {
     display: inline-block;
+    margin-bottom: 41px;
+    margin-left: 60px;
 }
 
 .breadcrumbs a {
@@ -818,16 +822,87 @@ a {
     display: none;
 }
 
-.wrapper-filters {
-    background-color: #efefef;
+.catalog-titles-wrapper {
+    width: 100%;
+    background: linear-gradient(to right,#dbdbdb 0%,#dbdbdb 35%,#ebebeb 35%,#ebebeb 100%);
 }
 
-.filters h2,
-.sorting-nav h2 {
+.catalog-titles-wrapper .container {
+    display: flex;
+    position: relative;
+}
+
+.catalog-titles-wrapper h2 {
+    margin: 0;
+    margin-left: 60px;
     font-size: 16px;
     line-height: 24px;
     font-weight: 800;
-    letter-spacing: 3.2px;
+    letter-spacing: .23em;
+    text-transform: uppercase;
+}
+
+.filter-nav,
+.sorting-nav {
+    padding-top: 23px;
+    padding-bottom: 23px;
+}
+
+.filter-nav {
+    padding-right: 177px;
+    background-color: #dcdcdc;
+}
+
+.sorting-nav {
+    display: flex;
+}
+
+.sorting-nav h2 {
+    margin-left: 72px;
+}
+
+.sorting-list {
+    margin-top: -2px;
+    margin-left: 51px;
+}
+
+.sorting-list a {
+    margin-right: 24px;
+    font-family: "Open Sans";
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.sorting-list a:hover,
+.sorttig-list a:focus {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.sorting-list a:active {
+    color: #000000;
+}
+
+.sorting-list .sorting-current {
+    color: #000000;
+}
+
+.catalog-wrapper {
+    width: 100%;
+    background: linear-gradient(to right,#efefef 0%,#efefef 35%,#fff 35%,#fff 100%);
+}
+
+.catalog-wrapper .container {
+    display: flex;
+}
+
+.filters {
+    display: flex;
+    min-width: 328px;
+    margin-right: 72px;
+    background-color: #efefef;
 }
 
 .filters fieldset {
@@ -858,30 +933,49 @@ a {
     color: #a6a6a6;
 }
 
-.sorting-list li {
-    font-family: "Open Sans";
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: 400;
-    letter-spacing: 0px;
-    color: rgba(0, 0, 0, 0.3);
+.filter button {
+    margin-bottom: 663px;
 }
 
-.sorting-list li:hover,
-.sorttig-list li:focus {
-    color: rgba(0, 0, 0, 0.6);
+.content {
+    position: relative;
 }
 
-.sorting-list li:active {
-    color: #000000;
-}
-
-.sorting-list .sorting-current {
-    color: #000000;
+.items {
+    margin-top: 69px;
 }
 
 .catalog-items {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
     list-style: none;
+}
+
+.catalog-item {
+    margin-right: 40px;
+}
+
+.catalog-item:nth-child(2n) {
+    margin-right: 0;
+}
+
+.catalog-item img {
+    margin-bottom: 25px;
+}
+
+.catalog-item-name {
+    position: relative;
+    min-width: 360px;
+    margin-bottom: 45px;
+}
+
+.catalog-item-name h3 {
+    max-width: 260px;
+    margin: 0;
+    padding: 0;
+    margin-right: 20px;
 }
 
 .item-title {
@@ -892,7 +986,11 @@ a {
     color: #000000;
 }
 
-.catalog-item b {
+.catalog-item-name b {
+    position: absolute;
+    right: 0px;
+    top: 2px;
+    margin-right: 0;
     font-size: 16px;
     line-height: 24px;
     font-weight: 300;
@@ -925,16 +1023,49 @@ a {
     color: rgba(0, 0, 0, 0.2);
 }
 
-.pagination-list {
-    list-style: none;
+.pagination {
+    margin-top: -10px;
+    min-width: 760px;
+    
     background-color: rgba(0, 0, 0, 0.08);
+}
+
+.pagination-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pagination-item:not(:last-child):not(:first-child) {
+    padding: 0 11px;
+}
+
+.pagination-list a {
+    display: inline-block;
+    padding-top: 23px;
+    padding-bottom: 21px;
+}
+
+.pagination-list li:first-child a {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-right: 191px;
+}
+
+.pagination-list li:last-child a {
+    padding-left: 30px;
+    padding-right: 26px;
+    margin-left: 183px;
 }
 
 .pagination-item a {
     font-size: 16px;
     line-height: 24px;
     font-weight: 800;
-    letter-spacing: 3.2px;
+    letter-spacing: .22em;
+    text-transform: uppercase;
     color: rgba(0, 0, 0, 0.3);
 }
 
@@ -974,6 +1105,10 @@ a {
     margin-top: 90px;
     margin-bottom: 0;
     color: #ffffff;  
+}
+
+.main-footer-inner {
+    margin-top: 0;
 }
 
 .main-footer-wrapper {
