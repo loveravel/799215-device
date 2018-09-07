@@ -1059,11 +1059,25 @@ a {
 }
 
 .filter-title {
+    position: relative;
     margin-bottom: 18px;
     font-size: 18px;
     line-height: 24px;
     font-weight: 800;
     letter-spacing: 0.18px;
+}
+
+.filter-title::before {
+    content: "";
+    
+    position: absolute;
+    top: -12px;
+    left: 0;
+    
+    width: 201px;
+    height: 2px;
+    
+    background-color: #000000;
 }
 
 .filter-item-price .filter-title {
