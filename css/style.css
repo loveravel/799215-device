@@ -462,10 +462,66 @@ a {
 /*---INDEX---*/
 
 .promo-slider {
+    position: relative;
     display: flex;   
     position: relative;
     width: 1160px;
     margin-bottom: -5px;
+}
+
+.promo-slider-controls {
+    position: absolute;
+    right: 58px;
+    top: 209px;
+    z-index: 100;
+
+    width: 160px;
+    height: 18px;
+
+    text-align: center;
+    font-size: 0;
+}
+
+.psc {
+    position: relative;
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    padding: 8px;
+    margin-right: 4px;
+    
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.psc::after {
+    content: "";
+    
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    z-index: 1;
+    
+    width: 10px;
+    height: 10px;
+    
+    border: 1px solid #000000;
+    border-radius: 50%;
+}
+
+.psc.active::before {
+    content: "";
+    
+    position: absolute;
+    left: 11px;
+    top: 11px;
+    z-index: 2;
+    
+    width: 2px;
+    height: 2px;
+    
+    border: 1px solid #000000;
+    border-radius: 50%;
 }
 
 .slide-columns {
@@ -498,7 +554,6 @@ a {
 
 .promo-slide:first-child {
     display: block;
-    position: relative;
 }
 
 .slide-column img {
