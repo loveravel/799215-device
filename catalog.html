@@ -76,17 +76,19 @@
                         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
                             <fieldset class="filter-item filter-item-price">
                                 <legend class="filter-title">Стоимость</legend>
-                                <div class="range-controls">
-                                    <div class="scale">
-                                        <div class="bar"></div>
+                                <div class="range-filter">
+                                    <div class="range-controls">
+                                        <div class="scale">
+                                            <div class="bar"></div>
+                                        </div>
+                                        <div class="toggle toggle-min"></div>
+                                        <div class="toggle toggle-max"></div>
                                     </div>
-                                    <div class="range-toggle range-toggle-min"></div>
-                                    <div class="range-toggle range-toggle-max"></div>
+                                    <div class="price-controls">
+                                        <label for="min-price">от<input id="min-price" type="" value="0"></label>
+                                        <label for="min-price">до<input id="max-price" type="" value="5000"></label>                                       
+                                    </div>
                                 </div>
-                                <label for="min-price">от</label>
-                                <input id="min-price" type="" value="0">
-                                <label for="min-price">до</label>
-                                <input id="max-price" type="" value="5000">
                             </fieldset>
                             <fieldset class="filter-item filter-item-color">
                                 <legend class="filter-title">Цвет</legend>

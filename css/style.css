@@ -874,6 +874,7 @@ a {
     font-weight: 400;
     letter-spacing: 0px;
     color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 
 .sorting-list a:hover,
@@ -899,13 +900,19 @@ a {
 }
 
 .filters {
-    display: flex;
     min-width: 328px;
     margin-right: 72px;
     background-color: #efefef;
 }
 
-.filters fieldset {
+.filter {
+    margin-left: 59px;
+    margin-top: 81px;
+}
+
+.filter-item {
+    margin: 0;
+    padding: 0;
     border: none;    
 }
 
@@ -914,6 +921,87 @@ a {
     line-height: 24px;
     font-weight: 800;
     letter-spacing: 0.18px;
+}
+
+.range-filter {
+    width: 196px;
+    margin-top: 35px;
+    padding-left: 4px;
+}
+
+.range-controls {
+    position: relative;
+    height: 2px;
+    margin-left: 5px;
+    margin-bottom: 9px;
+}
+
+.range-controls .scale {
+    height: 2px;
+    background-color: #dbdbdb;
+}
+
+.range-controls .bar {
+    height: 2px;
+    width: 60%;
+    background-color: #91c92f;
+}
+
+.range-controls .toggle {
+    position: absolute;
+    top: -10px;
+    left: 0;
+
+    width: 4px;
+    height: 4px;
+    padding: 0;
+
+    border: 8px solid #ffffff;
+    background-color: #ababab;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.range-controls .toggle-min {
+    left: -14px;
+}
+
+.range-controls .toggle-max {
+    left: 99px;
+}
+
+.price-controls {
+    font-size: 0;
+    margin-left: -4px;
+}
+
+.price-controls label {
+    display: inline-block;
+    width: 45%;
+    
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    letter-spacing: 0;
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.price-controls input {
+    width: 60px;
+    margin: 0;
+    padding: 0;
+    padding-left: 4px;
+    
+    
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    letter-spacing: 0;
+    
+    color: rgba(0, 0, 0, 0.2);
+    border: none;
+    background-color: #efefef;
 }
 
 .filter-options,
@@ -1188,6 +1276,8 @@ a {
 
 .socials-btn {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .footer-right {
@@ -1212,9 +1302,9 @@ a {
 .user-nav-footer li {
     position: relative;
     display: block;
-    max-width: 100px;
+    min-width: 60px;
     padding-left: 40px;
-    margin-left: 23px;
+    margin-left: 0px;
 }
 
 .login-link-footer a::before {
