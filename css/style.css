@@ -530,6 +530,20 @@ a {
     justify-content: space-between;
 }
 
+.slide-columns::before {
+    content: "";
+    
+    position: absolute;
+    top: -74px;
+    left: 50%;
+    margin-left: 20px;
+    
+    width: 100px;
+    height: 7px;
+    
+    background-color: #ffffff;
+}
+
 .slide-column {
     position: relative;
     top: -115px;
@@ -819,6 +833,19 @@ a {
     margin-bottom: 90px;
 }
 
+.index-columns h2::before {
+    content: "";
+    
+    position: absolute;
+    left: 1px;
+    top: -52px;
+    
+    width: 80px;
+    height: 7px;
+    
+    background-color: #000000;
+}
+
 .info {
     width: 475px;
 }
@@ -829,6 +856,7 @@ a {
 
 .info h2,
 .contacts h2 {
+    position: relative;
     margin: 0;
     margin-bottom: 43px;
     font-size: 47px;
@@ -1406,8 +1434,22 @@ a {
 }
 
 .footer-left {
+    position: relative;
     margin-left: -1px;
     margin-top: 60px;
+}
+
+.footer-left::after {
+    content: "";
+    
+    position: absolute;
+    bottom: 79px;
+    left: 1px;
+    
+    width: 80px;
+    height: 7px;
+    
+    background-color: #ffc600;
 }
 
 .main-footer-logo {
@@ -1551,6 +1593,7 @@ a {
 .copyright {
     margin-left: 334px;
     margin-top: 62px;
+    margin-bottom: 60px;
 }
 
 /*---MODAL---*/
