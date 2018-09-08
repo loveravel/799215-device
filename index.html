@@ -293,24 +293,23 @@
                     </div>
             </footer>
         </div>
-    </body>
-</html>
-  
         <section class="modal modal-write-us">
             <h2 class="visually-hidden">Напишите нам</h2>
-            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-                <p>
-                    <label for="user-name">Ваше имя:</label>
-                    <input id="user-name" type="text" placeholder="Имя Фамилия">
-                </p>
-                <p>
-                    <label for="user-email">Ваш e-mail:</label>
-                    <input id="user-email" type="email" placeholder="email@example.com">
-                </p>
-                <p>
-                    <label for="user-letter">Текст письма:</label>
-                    <textarea id="user-letter" type="text" placeholder="В свободной форме"></textarea>
-                </p>
+            <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+                <div class="modal-top">
+                    <div class="modal-field">
+                        <label for="user-name">Ваше имя:</label>
+                        <input id="user-name" type="text" placeholder="Имя Фамилия">
+                    </div>
+                    <div class="modal-field">
+                        <label for="user-email">Ваш e-mail:</label>
+                        <input id="user-email" type="email" placeholder="email@example.com">
+                    </div>
+                </div>
+                <div class="modal-bottom">
+                        <label for="user-letter">Текст письма:</label>
+                        <textarea id="user-letter" type="text" placeholder="В свободной форме"></textarea>
+                </div>
             </form>
             <button class="btn btn-default">Отправить</button>
             <button class="modal-close">Закрыть</button>
@@ -320,4 +319,8 @@
             <h2 class="visually-hidden">Как до нас добратсья</h2>
             <button class="modal-close">Закрыть</button>
         </section>
+    </body>
+</html>
+  
+        
     

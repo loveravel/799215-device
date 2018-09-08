@@ -1695,37 +1695,155 @@ a {
 /*---MODAL---*/
 
 .modal {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 1000;
+    
+    width: 960px;
+    margin-left: -480px;
+    
     background-color: #ffffff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.login-form label {
+.modal-write-us {
+    margin-top: -226px;
+    height: 553px;
+}
+
+.modal-write-us form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 100px;
+    margin-top: 95px;
+    margin-bottom: 42px;
+}
+
+.modal-top {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 33px;
+}
+
+.modal-field {
+    width: 360px;
+}
+
+.modal-write-us label,
+.modal-top input[type=text],
+.modal-top input[type=email] {
+    display: block;
+    width: 337px;
+}
+
+.modal-map {
+    display: none;
+}
+
+.modal-close {
+    position: absolute;
+    
+    right: 22px;
+    top: 23px;
+    
+    width: 55px;
+    height: 55px;
+    
+    font-size: 0;
+    
+    border: none;
+    background-color: transparent;
+    background-image: url(../img/modal-close.svg);
+    opacity: 0.5;
+    outline: none;
+}
+
+.modal-close:hover {
+    opacity: 1;
+}
+
+.modal-close:active {
+    opacity: 0.3;
+}
+
+.write-us-form label {
     font-size: 18px;
     line-height: 24px;
     font-weight: 800;
     letter-spacing: 0px;
+    padding-bottom: 7px;
 }
 
-.login-form input[type="text"],
-.login-form input[type="email"],
-.login-form textarea[type="text"] {
+.write-us-form input[type="text"],
+.write-us-form input[type="email"],
+.write-us-form textarea[type="text"] {
+    padding-left: 17px;
+    padding-top: 12px;
+    padding-bottom: 14px;
+    
     font-family: "Open Sans";
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 0px;
-    color: #464646;
+    color: rgba(70, 70, 70, 0.4);
     background-color: #f2f2f2;
-    border: none;
+    border: 3px solid transparent;
+    outline: none;
 }
 
-.login-form input[type="text"]:hover,
-.login-form input[type="email"]:hover,
-.login-form textarea[type="text"]:hover {
+.write-us-form textarea[type=text] {
+    width: 735px;
+    height: 125px;
+}
+
+.write-us-form input[type="text"]:hover,
+.write-us-form input[type="email"]:hover,
+.write-us-form textarea[type="text"]:hover {
     background-color: #eaeaea;
 }
 
-.login-form input[type="text"]:focus,
-.login-form input[type="email"]:focus,
-.login-form textarea[type="text"]:focus {
+.write-us-form input[type="text"]:focus,
+.write-us-form input[type="email"]:focus,
+.write-us-form textarea[type="text"]:focus {
     background-color: #ffffff;
     border: 3px solid #f7e296;
+}
+
+.modal-write-us .btn {
+    margin-left: 92px;
+}
+
+.modal input[placeholder]::-webkit-input-placeholder {
+    color: rgba(70, 70, 70, 0.4);
+}
+
+.modal input[placeholder]::-moz-placeholder {
+    color: rgba(70, 70, 70, 0.4);
+}
+
+.modal input[placeholder]:-moz-placeholder {
+    color: rgba(70, 70, 70, 0.4);
+}
+
+.modal input[placeholder]:-ms-input-placeholder {
+    color: rgba(70, 70, 70, 0.4);
+}
+
+.modal textarea[placeholder]::-webkit-input-placeholder {
+    color: rgba(70, 70, 70, 0.4);
+}
+
+.modal textarea[placeholder]::-moz-placeholder {
+    color: rgba(70, 70, 70, 0.4);
+}
+
+.modal textarea[placeholder]:-moz-placeholder {
+    color: rgba(70, 70, 70, 0.4);
+}
+
+.modal textarea[placeholder]:-ms-input-placeholder {
+    color: rgba(70, 70, 70, 0.4);
 }
