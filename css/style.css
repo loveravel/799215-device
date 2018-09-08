@@ -466,7 +466,6 @@ a {
     display: flex;   
     position: relative;
     width: 1160px;
-    margin-bottom: -5px;
 }
 
 .promo-slider-controls {
@@ -528,6 +527,7 @@ a {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    margin-bottom: 80px;
 }
 
 .slide-columns::before {
@@ -558,7 +558,6 @@ a {
 .promo-slider-list {
     margin: 0;
     padding: 0;
-    
     list-style: none;
 }
 
@@ -566,19 +565,31 @@ a {
     display: none;
 }
 
-.promo-slide:first-child {
+.promo-slide:nth-child(1) {
     display: block;
 }
 
-.slide-column img {
+.promo-slide:nth-child(1) img {
     position: relative;
     top: 4px;
     left: 2px;
 }
 
+.promo-slide:nth-child(2) img {
+    position: relative;
+    top: 16px;
+    left: 9px;
+}
+
+.promo-slide:nth-child(3) img {
+    position: relative;
+    top: 69px;
+    left: 14px;
+}
+
 .number-slide {
     position: absolute;
-    left: 369px;
+    right: 6px;
     top: -10px;
     font-size: 179.2px;
     line-height: 179.2px;
@@ -618,8 +629,7 @@ a {
 }
 
 .slide-table {
-    position: relative;
-    left: -3px;
+    margin-left: -3px;
     display: flex;
     justify-content: flex-start;
 }
@@ -632,18 +642,8 @@ a {
     line-height: 48px;
     font-weight: 300;
     letter-spacing: 0.36px;
-    width: 100px;
-    padding-right: 60px;
+    width: 160px; 
     margin-bottom: 0px;
-}
-
-.slide-table td:nth-child(2),
-.slide-table th:nth-child(2) {
-    padding-right: 39px; 
-}
-
-.slide-table td:nth-child(3) {
-    padding-right: 0; 
 }
 
 .slide-table th {
@@ -657,8 +657,12 @@ a {
     line-height: 20px;
     font-weight: 300;
     letter-spacing: 0.13px;
-    width: 100px;
-    padding-right: 60px;
+    width: 160px;
+}
+
+.slide-table th:nth-child(2) ,
+.slide-table td:nth-child(2)  {
+    width: 140px;
 }
 
 .popular {
