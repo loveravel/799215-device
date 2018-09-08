@@ -565,26 +565,26 @@ a {
     display: none;
 }
 
-.promo-slide:nth-child(1) {
+.promo-slide:nth-child(3) {
     display: block;
 }
 
 .promo-slide:nth-child(1) img {
-    position: relative;
+    position: absolute;
     top: 4px;
-    left: 2px;
+    left: 90px;
 }
 
 .promo-slide:nth-child(2) img {
-    position: relative;
+    position: absolute;
     top: 16px;
-    left: 9px;
+    left: 116px;
 }
 
 .promo-slide:nth-child(3) img {
-    position: relative;
+    position: absolute;
     top: 69px;
-    left: 14px;
+    left: 31px;
 }
 
 .number-slide {
