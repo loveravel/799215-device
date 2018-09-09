@@ -810,8 +810,47 @@ a {
     top: -26px;
 }
 
-.services-slider-slides li:first-child {
+.services-slider-slides li:nth-child(3) {
     display: block;
+}
+
+.services-slider-slides li:nth-child(1)::after {
+    content: "";
+    
+    position: absolute;
+    top: 12px;
+    right: -234px;
+    
+    width: 136px;
+    height: 164px;
+    
+    background-image: url(../img/delivery.svg);
+}
+
+.services-slider-slides li:nth-child(2)::after {
+    content: "";
+    
+    position: absolute;
+    top: -12px;
+    right: -254px;
+    
+    width: 171px;
+    height: 195px;
+    
+    background-image: url(../img/warranty.svg);
+}
+
+.services-slider-slides li:nth-child(3)::after {
+    content: "";
+    
+    position: absolute;
+    top: -12px;
+    right: -230px;
+    
+    width: 156px;
+    height: 188px;
+    
+    background-image: url(../img/credit.svg);
 }
 
 .services-slider-slides h2 {
