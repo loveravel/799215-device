@@ -119,11 +119,25 @@ a {
 }
 
 @keyframes btn-move {
-  to {
-    top: -8px;
-    padding-top: 15px;
-    padding-bottom: 17px;
-  }
+    0% {
+        top: 8px;
+    }
+    100% {
+        top: -8px;
+        padding-top: 15px;
+        padding-bottom: 17px;
+    }
+}
+
+@keyframes btn-move-reverse {
+    0% {
+        top: -8px;
+        padding-top: 15px;
+        padding-bottom: 17px;
+    }
+    100% {
+        top: 8px;
+    }
 }
 
 .btn:hover::before {
@@ -131,6 +145,13 @@ a {
     animation-duration: 0.13s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in;
+}
+
+.btn:not(:hover)::before {
+    animation-name: btn-move-reverse;
+    animation-duration: 0.13s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
 }
 
 /*---header---*/
@@ -1895,7 +1916,7 @@ a {
 }
 
 .modal-write-us {
-    display: block;
+    display: none;
     margin-top: -226px;
 }
 
