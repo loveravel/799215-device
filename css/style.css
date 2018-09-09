@@ -77,11 +77,9 @@ a {
     padding: 0 20px;
 }
 
-.btn-default {
+.btn {
     position: relative;
     display: inline-block;
-    
-    padding: 0 44px;
     
     text-align: center;
     vertical-align: center;
@@ -97,32 +95,38 @@ a {
     cursor: pointer;
 }
 
-.btn-default:active {
+.btn:active {
     color: rgba(0, 0, 0, 0.3);
 }
 
-.btn-default::before {
+.btn span {
+    position: relative;
+    z-index: 2;
+}
+
+.btn::before {
     content: "";
     position: absolute;
     
     top: 8px;
     left: 0;
     
-    width: 220px;
+    width: 98%;
     height: 8px;
     
     background-color: #f0c52e;
-    z-index: -1;
+    z-index: 1;
 }
 
 @keyframes btn-move {
   to {
-    top: -11px;
-    padding: 20px 0;
+    top: -8px;
+    padding-top: 15px;
+    padding-bottom: 17px;
   }
 }
 
-.btn-default:hover::before {
+.btn:hover::before {
     animation-name: btn-move;
     animation-duration: 0.13s;
     animation-fill-mode: forwards;
@@ -639,7 +643,8 @@ a {
     
 }
 
-.slide-content a {
+.slide-content .btn {
+    padding: 0 44px;
     margin-bottom: 58px;
 }
 
@@ -745,54 +750,50 @@ a {
 }
 
 .service-slider-controls {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 300px;
     margin-right: 100px;
 }
 
-.btn-service-slider {
-    position: relative;
-    display: inline-block;
-    
-    padding: 0 25px;
-    
-    text-align: center;
-    vertical-align: center;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 800;
-    letter-spacing: 3.6px;
-    text-transform: uppercase;
-
-    color: #000000;
-    border: none;
-    
-    cursor: pointer;
-}
-
-.btn-service-slider::before {
+.service-slider-controls::after {
     content: "";
+    
     position: absolute;
+    top: -99px;
+    right: 16px;
     
-    top: 8px;
-    left: 0;
+    width: 7px;
+    height: 319px;
     
-    width: 160px;
-    height: 8px;
-    
-    background-color: #f0c52e;
+    background-color: #000000;
 }
 
-.btn-service-slider:hover::before {
+.service-slider-controls .btn {
     top: -11px;
-    padding: 20px 0;
+    margin-bottom: 40px;
 }
 
+.service-slider-controls .btn:active::before {
+    background-color: #000000;
+    width: 280px;
+}
 
-.btn-service-slider:active::before {
+.service-slider-controls .btn-delivery {
+    padding: 0 20px;
+}
+
+.service-slider-controls .btn:active {
     color: #f7e184;
-    background: #000000;
+}
+
+.service-slider-controls .btn-warranty {
+    padding: 0 25px;
+}
+
+.service-slider-controls .btn-credit {
+    padding: 0 38px;
 }
 
 .services-slider-slides {
@@ -903,6 +904,10 @@ a {
     margin-bottom: 71px;
 }
 
+.contacts .btn {
+    padding: 0 42px;
+}
+
 .partners {
     margin: 0;
     padding: 0;
@@ -932,6 +937,10 @@ a {
     
     border: 2px solid #ececec;
     border-radius: 50%;
+}
+
+.info .btn {
+    padding: 0 24px;
 }
 
 /*---CATALOG---*/
@@ -1085,11 +1094,16 @@ a {
     margin-top: 81px;
 }
 
+.filter .btn {
+    background-color: transparent;
+    padding: 0 41px;
+}
+
 .filter-item {
     margin: 0;
     padding: 0;
     border: none;
-    margin-bottom: 42px;
+    margin-bottom: 41px;
 }
 
 .filter-title {
@@ -1842,7 +1856,10 @@ a {
 }
 
 .modal-write-us .btn {
-    margin-left: 92px;
+    margin-left: 100px;
+    background-color: transparent;
+    padding: 0 36px;
+    outline: none;
 }
 
 .modal input[placeholder]::-webkit-input-placeholder {
