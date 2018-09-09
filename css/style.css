@@ -2024,6 +2024,14 @@ a {
     outline: none;
 }
 
+.modal-map-show {
+    display: block;
+}
+
+.modal-write-us-show {
+    display: block;
+}
+
 .modal input[placeholder]::-webkit-input-placeholder {
     color: rgba(70, 70, 70, 0.4);
 }
