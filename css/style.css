@@ -1887,7 +1887,11 @@ a {
 }
 
 .modal-map {
-    display: none;
+    display: block;
+    height: 559px;
+    margin-top: -224px;
+    background-image: url(../img/map-big.jpg);
+    background-repeat: no-repeat;
 }
 
 .modal-write-us {
