@@ -1887,7 +1887,7 @@ a {
 }
 
 .modal-map {
-    display: block;
+    display: none;
     height: 559px;
     margin-top: -224px;
     background-image: url(../img/map-big.jpg);
@@ -1895,9 +1895,8 @@ a {
 }
 
 .modal-write-us {
-    display: none;
+    display: block;
     margin-top: -226px;
-    height: 553px;
 }
 
 .modal-write-us form {
@@ -1997,6 +1996,8 @@ a {
 
 .modal-write-us .btn {
     margin-left: 100px;
+    margin-bottom: 87px;
+    
     background-color: transparent;
     padding: 0 36px;
     outline: none;
