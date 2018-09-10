@@ -21,7 +21,7 @@ btn_write_us.addEventListener("click", function(evt) {
     evt.preventDefault();
     modal_write_us.classList.add("modal-write-us-show");
     if (storage) {
-        login.value = storage;
+        your_name.value = storage;
         your_email.focus();
     } else {
         your_name.focus();
