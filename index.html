@@ -234,7 +234,7 @@
                 <section class="contacts">
                     <h2><a name="contacts">Контакты</a></h2>
                     <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-                    <img src="img/map.jpg" width="560" height="222" alt="Карта. Офис по адресу г. Москва, ул. Строителей, 15">
+                    <img class="map-img" src="img/map.jpg" width="560" height="222" alt="Карта. Офис по адресу г. Москва, ул. Строителей, 15">
                     <a class="btn btn-write-us" href="write-us.html"><span>Напишите нам</span></a>
                 </section>
             </div>
@@ -301,23 +301,24 @@
                 <div class="modal-top">
                     <div class="modal-field">
                         <label for="user-name">Ваше имя:</label>
-                        <input id="user-name" type="text" placeholder="Имя Фамилия">
+                        <input class="your-name" id="user-name" type="text" placeholder="Имя Фамилия">
                     </div>
                     <div class="modal-field">
                         <label for="user-email">Ваш e-mail:</label>
-                        <input id="user-email" type="email" placeholder="email@example.com">
+                        <input class="your-email" id="user-email" type="email" placeholder="email@example.com">
                     </div>
                 </div>
                 <div class="modal-bottom">
                         <label for="user-letter">Текст письма:</label>
-                        <textarea id="user-letter" type="text" placeholder="В свободной форме"></textarea>
+                        <textarea class="your-message" id="user-letter" type="text" placeholder="В свободной форме"></textarea>
                 </div>
+                <button class="btn" type="submit"><span>Отправить</span></button>
             </form>
-            <button class="btn"><span>Отправить</span></button>
-            <button class="modal-close">Закрыть</button>
+            <button class="modal-close" type="button">Закрыть</button>
         </section>
         <section class="modal modal-map">
             <h2 class="visually-hidden">Как до нас добратсья</h2>
+            <iframe src="https://yandex.ru/map-widget/v1/-/CBBejDtpsB" width="960" height="559" frameborder="1" allowfullscreen="true"></iframe>
             <button class="modal-close">Закрыть</button>
         </section>
         
