@@ -1729,7 +1729,7 @@ a {
     top: 23px;
     left: 13px;
     
-    background-image: url("../img/user-footer.png");
+    background-image: url("../img/user-footer.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
 }
@@ -1743,7 +1743,7 @@ a {
     top: 25px;
     left: 20px;
     
-    background-image: url("../img/compare-footer.png");
+    background-image: url("../img/compare-footer.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
 }
@@ -1757,7 +1757,7 @@ a {
     top: 23px;
     left: 18px;
     
-    background-image: url("../img/cart-footer.png");
+    background-image: url("../img/cart-footer.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
 }
@@ -1766,7 +1766,9 @@ a {
 .html-logo {
     color: #ffc600;
 }
-
+.login-link-footer:hover::before,
+.differences-footer:hover::before,
+.basket-footer:hover::before,
 .main-footer-logo:hover, 
 .html-logo:hover,
 .main-footer-logo:focus, 
@@ -1774,6 +1776,9 @@ a {
     opacity: 0.6;
 }
 
+.login-link-footer:active::before,
+.differences-footer:active::before,
+.basket-footer:active::before,
 .main-footer-logo:active, 
 .html-logo:active {
     opacity: 0.3;
