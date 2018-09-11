@@ -1301,6 +1301,11 @@ a {
     left: 99px;
 }
 
+.range-controls .toggle:active {
+    top: -11px;
+    border: 9px solid #ffffff;
+}
+
 .price-controls {
     font-size: 0;
     margin-left: -4px;
