@@ -574,7 +574,7 @@ a {
     border-radius: 50%;
 }
 
-.psc.active::before {
+.psc-current::before {
     content: "";
     
     position: absolute;
@@ -631,7 +631,7 @@ a {
     display: none;
 }
 
-.promo-slide:nth-child(1) {
+.promo-slide-current {
     display: block;
 }
 
@@ -668,6 +668,7 @@ a {
     position: relative;
     top: 83px;
     left: 40px;
+    width: 510px;
 }
 
 .slide-title {

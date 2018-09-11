@@ -55,10 +55,3 @@ window.addEventListener("keydown", function(evt) {
         }
     }
 });
-
-/*???*/
-form_write_us.addEventListener("click", function(evt) {
-    if (modal_write_us.querySelector(".modal-error")) {
-        modal_write_us.classList.remove("modal-error");
-    }
-});
