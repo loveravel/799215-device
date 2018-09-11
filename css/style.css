@@ -1108,7 +1108,7 @@ a {
     font-size: 16px;
     line-height: 24px;
     font-weight: 800;
-    letter-spacing: .23em;
+    letter-spacing: 0.23em;
     text-transform: uppercase;
 }
 
@@ -1132,48 +1132,43 @@ a {
 }
 
 .sorting-list {
-    position: relative;
     margin-top: -2px;
     margin-left: 51px;
+    margin-right: 208px;
 }
 
-.sorting-list::before {
-    content: "";
-    
-    position: absolute;
-    left: 518px;
-    top: 9px;
-    
+.icon-dir:first-child {
+    display: inline-block;
     width: 11px;
     height: 10px;
+    margin-right: 14px;
     
     background-image: url(../img/icon-up-dir.svg);
     opacity: 0.2;
 }
 
-.sorting-list::after {
-    content: "";
-    
-    position: absolute;
-    left: 548px;
-    top: 9px;
-    
+.icon-dir:last-child {
+    display: inline-block;
     width: 11px;
     height: 10px;
     
     background-image: url(../img/icon-down-dir.svg);
+    opacity: 0.2;
+}
+
+.icon-dir.current {
+    opacity: 1;
+}
+
+.icon-dir:hover,
+.icon-dir:focus,
+.icon-dir:hover,
+.icon-dir:focus {
     opacity: 0.4;
 }
 
-.sorting-list:hover::before,
-.sorting-list:focus::before,
-.sorting-list:hover::after,
-.sorting-list:focus::after {
-    opacity: 0.4;
-}
-
-.sorting-list:active::before,
-.sorting-list:active::after {
+.icon-dir:active,
+.icon-dir:active {
     opacity: 1;
 }
 
@@ -1377,6 +1372,10 @@ a {
     top: 7px;
 
     background-image: url(../img/checkbox-off.svg);
+}
+
+.filter-input-checkbox:checked + label::before {
+    background-image: none;
 }
 
 .filter-input-checkbox:checked + label::after {
