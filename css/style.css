@@ -2273,7 +2273,7 @@ a {
 
 .write-us-form input[type="text"],
 .write-us-form input[type="email"],
-.write-us-form textarea[type="text"] {
+.write-us-form textarea {
     padding-left: 17px;
     padding-top: 12px;
     padding-bottom: 14px;
@@ -2288,20 +2288,20 @@ a {
     outline: none;
 }
 
-.write-us-form textarea[type=text] {
+.write-us-form textarea {
     width: 735px;
-    height: 125px;
+    height: 124px;
 }
 
 .write-us-form input[type="text"]:hover,
 .write-us-form input[type="email"]:hover,
-.write-us-form textarea[type="text"]:hover {
+.write-us-form textarea:hover {
     background-color: #eaeaea;
 }
 
 .write-us-form input[type="text"]:focus,
 .write-us-form input[type="email"]:focus,
-.write-us-form textarea[type="text"]:focus {
+.write-us-form textarea:focus {
     background-color: #ffffff;
     border: 3px solid #f7e296;
 }
