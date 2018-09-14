@@ -32,50 +32,6 @@
 
 /*---Animation---*/
 
-@-webkit-keyframes btn-move {
-    0% {
-        height: 8px;
-    }
-    100% {
-        height: 40px;
-        -webkit-transform: translateY(-16px);
-                transform: translateY(-16px);
-    }
-}
-
-@keyframes btn-move {
-    0% {
-        height: 8px;
-    }
-    100% {
-        height: 40px;
-        -webkit-transform: translateY(-16px);
-                transform: translateY(-16px);
-    }
-}
-
-@-webkit-keyframes btn-move-reverse {
-    0% {
-        height: 40px;
-        -webkit-transform: translateY(-16px);
-                transform: translateY(-16px);
-    }
-    100% {
-        height: 8px;
-    }
-}
-
-@keyframes btn-move-reverse {
-    0% {
-        height: 40px;
-        -webkit-transform: translateY(-16px);
-                transform: translateY(-16px);
-    }
-    100% {
-        height: 8px;
-    }
-}
-
 @-webkit-keyframes modal-move {
     0% {
         -webkit-transform: scale(0) rotate(0deg);
@@ -215,7 +171,7 @@ a {
     content: "";
     position: absolute;
     
-    top: 8px;
+    top: 50%;
     left: 0;
     
     width: 98%;
@@ -223,28 +179,12 @@ a {
     
     background-color: #f0c52e;
     z-index: 1;
+    transition: 0.3s;
+    transform: translate(0, -50%);
 }
 
 .btn:hover::before {
-    -webkit-animation-name: btn-move;
-            animation-name: btn-move;
-    -webkit-animation-duration: 0.13s;
-            animation-duration: 0.13s;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-}
-
-.btn:not(:hover)::before {
-    -webkit-animation-name: btn-move-reverse;
-            animation-name: btn-move-reverse;
-    -webkit-animation-duration: 0.13s;
-            animation-duration: 0.13s;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+    height: 40px;
 }
 
 /*---header---*/
@@ -1012,7 +952,7 @@ a {
     content: "";
     position: absolute;
     
-    top: 8px;
+    top: 50%;
     left: 0;
     
     width: 98%;
@@ -1020,6 +960,12 @@ a {
     
     background-color: #f0c52e;
     z-index: 1;
+    transition: 0.3s;
+    transform: translate(0, -50%);
+}
+
+.btn-ss:hover::before {
+    height: 40px;
 }
 
 .service-slider-controls .btn-ss {
@@ -1033,9 +979,7 @@ a {
     background-color: #000000;
     width: 280px;
     height: 40px;
-    -webkit-transform: translateY(-16px);
-        -ms-transform: translateY(-16px);
-            transform: translateY(-16px);
+    transform: translateY(-50%);
 }
 
 .service-slider-controls .btn-delivery {
