@@ -258,7 +258,7 @@ a {
     margin: 0;
     padding-left: 38px;
     
-    font-family: "Open Sans";
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
     font-weight: 300;
@@ -293,7 +293,7 @@ a {
     padding-left: 18px;
     padding-right: 19px;
     
-    font-family: "Open Sans";
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
     font-weight: 300;
@@ -389,7 +389,7 @@ a {
 }
 
 .user-nav a {
-    font-family: "Open Sans";
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
     letter-spacing: 0.15px;
@@ -547,7 +547,7 @@ a {
     display: block;
     margin-bottom: 6px;
     margin-right: 59px;
-    font-family: "Open Sans";
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
     font-weight: 300;
@@ -733,7 +733,7 @@ a {
 .slide-text {
     width: 481px;
     margin-bottom: 50px;
-    font-family: "Open Sans";
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
     font-weight: 300;
@@ -779,7 +779,7 @@ a {
     position: relative;
     left: 2px;
     vertical-align: top;
-    font-family: "Open Sans";
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 20px;
     font-weight: 300;
@@ -1084,7 +1084,7 @@ a {
 }
 
 .services-slider-slides p {
-    font-family: "Open Sans";
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
     font-weight: 300;
@@ -1158,7 +1158,7 @@ a {
 .info p,
 .contacts p {
     margin-bottom: 30px;
-    font-family: "Open Sans";
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
     letter-spacing: 0.003em;
@@ -1242,7 +1242,7 @@ a {
     position: relative;
     float: left;
     padding-right: 37px;
-    font-family: "Open Sans";
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 14px;
     line-height: 24px;
     font-weight: 300;
@@ -1387,7 +1387,7 @@ a {
 
 .sorting-list a {
     margin-right: 24px;
-    font-family: "Open Sans";
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
@@ -1581,7 +1581,7 @@ a {
     display: block;
     padding-left: 39px;
     
-    font-family: "Open Sans";
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 14px;
     line-height: 40px;
     font-weight: 300;
@@ -1767,7 +1767,7 @@ a {
     margin-left: 30px;
     margin-top: 22px;
     
-    font-family: "Open Sans";
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 20px;
     font-weight: 300;
@@ -1946,7 +1946,7 @@ a {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    font-family: "Open Sans";
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
     line-height: 36px;
     font-weight: 300;
@@ -2083,7 +2083,7 @@ a {
 .footer-middle p {
     display: inline-block;
     vertical-align: top;
-    font-family: "Open Sans";
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
     font-weight: 300;
@@ -2310,7 +2310,7 @@ a {
     padding-top: 12px;
     padding-bottom: 14px;
     
-    font-family: "Open Sans";
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 0px;
