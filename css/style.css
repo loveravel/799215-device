@@ -1242,11 +1242,25 @@ a {
     color: rgba(0, 0, 0, 0.3);
 }
 
-.breadcrumbs a::after {
+.breadcrumbs-index::after {
     content: "";
     position: absolute;
     right: 19px;
-    top: 9px;
+    top: 10px;
+    
+    width: 4px;
+    height: 7px;
+    
+    background-image: url(../img/nav-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.breadcrumbs-catalog::after {
+    content: "";
+    position: absolute;
+    right: 16px;
+    top: 10px;
     
     width: 4px;
     height: 7px;
