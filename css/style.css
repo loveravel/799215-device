@@ -1317,10 +1317,7 @@ a {
 
 .catalog-titles-wrapper {
     width: 100%;
-    background: -webkit-gradient(linear,left top, right top,from(#dbdbdb),color-stop(35%, #dbdbdb),color-stop(35%, #ebebeb),to(#ebebeb));
-    background: -webkit-linear-gradient(left,#dbdbdb 0%,#dbdbdb 35%,#ebebeb 35%,#ebebeb 100%);
-    background: -o-linear-gradient(left,#dbdbdb 0%,#dbdbdb 35%,#ebebeb 35%,#ebebeb 100%);
-    background: linear-gradient(to right,#dbdbdb 0%,#dbdbdb 35%,#ebebeb 35%,#ebebeb 100%);
+    background: linear-gradient(to right,#dbdbdb 0%,#dbdbdb 29%,#ebebeb 29%,#ebebeb 100%);
 }
 
 .catalog-titles-wrapper .container {
@@ -1430,10 +1427,7 @@ a {
 
 .catalog-wrapper {
     width: 100%;
-    background: -webkit-gradient(linear,left top, right top,from(#efefef),color-stop(35%, #efefef),color-stop(35%, #fff),to(#fff));
-    background: -webkit-linear-gradient(left,#efefef 0%,#efefef 35%,#fff 35%,#fff 100%);
-    background: -o-linear-gradient(left,#efefef 0%,#efefef 35%,#fff 35%,#fff 100%);
-    background: linear-gradient(to right,#efefef 0%,#efefef 35%,#fff 35%,#fff 100%);
+    background: linear-gradient(to right,#efefef 0%,#efefef 29%,#fff 29%,#fff 100%);
 }
 
 .catalog-wrapper .container {
@@ -1444,7 +1438,6 @@ a {
 
 .filters {
     min-width: 328px;
-    margin-right: 72px;
     background-color: #efefef;
 }
 
@@ -1685,6 +1678,7 @@ a {
 }
 
 .items {
+    margin-left: 72px;
     margin-top: 69px;
 }
 
