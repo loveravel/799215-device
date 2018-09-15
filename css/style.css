@@ -340,9 +340,8 @@ a {
     color: #000000;
 }
 
-.user-nav,
 .site-nav,
-.catalog-nav {
+.user-nav {
     flex-wrap: wrap;
 }
 
@@ -473,8 +472,10 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     height: 40px;
+    width: 1050px;
     padding-bottom: 137px;
     margin-top: -2px;
 }
@@ -526,7 +527,7 @@ a {
 }
 
 .site-nav-item:nth-child(4) {
-    margin-right: -5px;
+    margin-right: 0px;
 }
 
 .site-nav-header .catalog-nav {
@@ -535,7 +536,6 @@ a {
     top: 210px;
     margin-left: -60px;
     padding: 0 60px;
-    width: 1040px;
     height: 129px;
     background-color: #f7e296;
     z-index: 1;
@@ -817,7 +817,8 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1113,7 +1114,8 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1364,7 +1366,8 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .sorting-nav h2 {
@@ -1977,7 +1980,8 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
@@ -2114,7 +2118,8 @@ a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 
@@ -2131,13 +2136,18 @@ a {
 }
 
 .footer-paragraph {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 360px;
 }
 
 .footer-paragraph:last-child {
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
 }
 
 .user-nav-footer a:hover,
