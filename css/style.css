@@ -1892,13 +1892,13 @@ a {
     padding-bottom: 21px;
 }
 
-.pagination-list li:first-child a {
+.pagination-back a {
     padding-left: 30px;
     padding-right: 30px;
     margin-right: 191px;
 }
 
-.pagination-list li:last-child a {
+.pagination-next a {
     padding-left: 30px;
     padding-right: 26px;
     margin-left: 183px;
