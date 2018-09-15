@@ -1099,7 +1099,11 @@ a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-bottom: 145px;
+    margin-bottom: 139px;
+}
+
+.brands a {
+    display: block;
 }
 
 .brand-first:hover {
@@ -2121,18 +2125,32 @@ a {
 
 .footer-bottom {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-left: 509px;
     margin-bottom: 60px;
 }
 
+.copyright {
+    /*---for IE11---*/
+    margin-left: 465px;
+}
+
 .socials-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     
-    width: 141px;
+    width: 160px;
     
     list-style: none;
     margin: 0;
@@ -2142,6 +2160,7 @@ a {
 .socials-btn li {
     position: relative;
     top: 2px;
+    margin-right: 18px;
     z-index: 1;
 }
 
@@ -2194,16 +2213,6 @@ a {
 .instagram-btn:focus::before,
 .twitter-btn:focus::before {
     opacity: 0.1;
-}
-
-.copyright {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
 }
 
 .footer-bottom::after {
