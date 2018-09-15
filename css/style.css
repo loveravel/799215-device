@@ -342,6 +342,12 @@ a {
 
 .user-nav,
 .site-nav,
+.catalog-nav {
+    flex-wrap: wrap;
+}
+
+.user-nav,
+.site-nav,
 .user-tools {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -467,6 +473,7 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex-wrap: wrap;
     height: 40px;
     padding-bottom: 137px;
     margin-top: -2px;
@@ -482,6 +489,11 @@ a {
     font-weight: 800;
     letter-spacing: 3.6px;
     text-transform: uppercase;
+}
+
+.site-nav-item {
+    /*---На случай переполнения контента---*/
+    margin-right: 10px;
 }
 
 .site-nav-item:first-child {
@@ -511,6 +523,10 @@ a {
 
 .site-nav-item:nth-child(3) {
     margin-right: 108px;
+}
+
+.site-nav-item:nth-child(4) {
+    margin-right: -5px;
 }
 
 .site-nav-header .catalog-nav {
@@ -801,6 +817,7 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex-wrap: wrap;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1096,6 +1113,7 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1346,6 +1364,7 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .sorting-nav h2 {
@@ -1958,6 +1977,7 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex-wrap: wrap;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
@@ -2083,15 +2103,18 @@ a {
     margin-bottom: 62px
 }
 
-.footer-middle div {
+.footer-middle .footer-navigation {
     margin-top: 6px;
-    width: 427px;
+    width: 440px;
+    margin-right: 15px;
+    margin-left: 17px;
 }
 
 .site-nav-footer {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 
@@ -2107,8 +2130,14 @@ a {
     padding: 0;
 }
 
-.footer-middle p:last-child {
-    margin-left: 37px;
+.footer-paragraph {
+    display: flex;
+    flex-wrap: wrap;
+    width: 360px;
+}
+
+.footer-paragraph:last-child {
+    justify-content: flex-end;
 }
 
 .user-nav-footer a:hover,
