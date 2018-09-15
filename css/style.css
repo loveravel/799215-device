@@ -1102,14 +1102,24 @@ a {
     margin-bottom: 145px;
 }
 
-.brands img {
-    -webkit-filter: grayscale(1) opacity(0.2);
-            filter: grayscale(1) opacity(0.2);
+.brand-first:hover {
+    background-image: url(../img/brand-1-color.png);
+}
+
+.brand-second:hover {
+    background-image: url(../img/brand-2-color.png);
+}
+
+.brand-third:hover {
+    background-image: url(../img/brand-3-color.png);
+}
+
+.brand-fourth:hover {
+    background-image: url(../img/brand-4-color.png);
 }
 
 .brands img:hover {
-    -webkit-filter: none;
-            filter: none;
+    opacity: 0;
 }
 
 .index-columns {
